@@ -1,0 +1,131 @@
+body {
+    color: #f1f1f1;
+    background-image: url(Picsusedd/cybercity.jpg);
+    font-size: 18px;
+}
+
+.panel_I h1 {
+    text-shadow: 3px 3px 10px #50c5ff, -3px -3px 10px #eb6b6b ;
+}
+
+#container2 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+            
+#carousel, #navigation {
+    flex: initial;
+    display: block;
+}
+            
+#carousel {
+    overflow: hidden;
+    width: 1000px;
+    height: 790px;
+    border-radius: 4px;
+    backdrop-filter: blur(65px);
+    box-shadow: 3px 3px 10px #193d55, -3px -3px 10px #193d55 ;
+    border: none;
+    border-radius: 10px;
+
+}
+            
+.p-wrapper {
+    position: relative;
+    width: auto;
+    height: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+            
+#button_I:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); 
+}
+            
+#button_M:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); 
+}
+
+#button_E:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%); 
+}
+
+#button_C:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%); 
+}
+
+#vidX {
+    border: none;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+            
+[class^="panel_"] {
+    overflow: auto;
+    position: relative;
+    width: inherit;
+    height: inherit;
+    padding: 13px;
+}
+            
+#navigation {
+    margin-left: 24px;
+}
+
+[class^="label_"] {
+    display: block;
+    cursor: pointer;
+    margin: 8px 0;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 4px;
+    color: #aaa;
+    background-color: #005892;
+    transition: all 0.3s ease;
+}
+            
+[class^="label_"]:hover {
+    color: #444;
+    background-color: #f54242;
+}
+            
+#button_I:checked ~ #navigation .label_I,
+#button_M:checked ~ #navigation .label_M,
+#button_E:checked ~ #navigation .label_E,
+#button_C:checked ~ #navigation .label_C {
+     cursor: default;
+     color: #fff;
+     background-color: #4781ff;
+     box-shadow: 3px 3px 10px white;
+}
+
+.home {
+    color: #ffffff;
+    background: #214fe6;
+    padding: 10px 20px;
+    text-decoration: none; 
+    transition: background .5s;
+    border: none;
+    border-radius: 3px;
+  }
+
+.home:hover {
+    background: #fa2a2a;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer; 
+      transition: background .5s; 
+}

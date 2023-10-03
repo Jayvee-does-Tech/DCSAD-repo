@@ -1,0 +1,463 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-image: url(Picsusedd/cybercity.jpg);
+    color: #f1f1f1;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 940px; 
+    padding: 0 10px;
+  }
+
+  .header {
+    background-image: url(Picsusedd/Headerbackimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    text-align: center;
+    border: none;
+  }
+
+  .header .container {
+    position: relative;
+    top: 200px;
+  }
+
+  .header h1 {
+    color: #1456e6;
+    line-height: 100px; 
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    text-transform: uppercase; 
+    text-shadow: 3px 3px 3px rgb(245, 78, 78), -3px -3px 3px rgb(75, 88, 235);
+    
+  }
+
+  .header h3 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-transform: uppercase; 
+  }
+
+  .container #img1{
+    border: none;
+    border-radius: 100px;
+    height: 100px;
+  }
+
+  .container #img2{
+    border: none;
+    height: 100px;
+  }
+
+  .container #img3{
+    border: none;
+    height: 100px;
+  }
+
+  
+  .hack {
+    color: #ffffff;
+    background: #214fe6;
+    padding: 10px 40px;
+    text-decoration: none; 
+    transition: background .5s;
+    border: none;
+    border-radius: 3px;
+  }
+
+   .nav nav p:hover{
+    background: #4b75ff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; 
+    transition: background .5s;  
+  }
+
+  .hack:hover {
+  background: #fa2a2a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; 
+    transition: background .5s; 
+  }
+
+  .nav {
+    background-color: #000;
+    height: 80px; 
+    width: 100%;
+    border: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .nav nav{
+    height: 80px;
+    list-style: none;
+    margin: 0 auto; 
+    padding: 0;
+  }
+
+  .nav nav p {
+    color: #fff;
+    display: inline-block; 
+    height: 75px;
+    line-height: 80px; 
+    list-style: none;
+    padding: 0 10px;
+    transition: background .5s; 
+    margin: auto;
+  }
+
+  .panel_I h1 {
+    text-shadow: 3px 3px 10px #50c5ff, -3px -3px 10px #eb6b6b ;
+  }
+
+  #container2 {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-image: url(Picsusedd/Cyber6.jpg);
+      background-size: 100% 100%, contain;
+      border-radius: 20px;
+      background-repeat: no-repeat;
+  }
+
+  #container2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-size: 18px;
+  }
+              
+  #carousel, #navigation {
+      flex: initial;
+      display: block;
+  }
+              
+  #carousel {
+      overflow: hidden;
+      width: 1000px;
+      height: 790px;
+      border-radius: 4px;
+      backdrop-filter: blur(65px);
+      box-shadow: 3px 3px 10px #f14c4c, -3px -3px 10px #39b0ff ;
+      border: none;
+      border-radius: 10px;
+
+  }
+              
+  .p-wrapper {
+      position: relative;
+      width: auto;
+      height: 100%;
+      transition: transform 0.4s ease-in-out;
+  }
+              
+  #button_I:checked ~ #carousel .p-wrapper {
+      -webkit-transform: translateY(0);
+      transform: translateY(0); 
+  }
+              
+  #button_M:checked ~ #carousel .p-wrapper {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%); 
+  }
+
+  #button_E:checked ~ #carousel .p-wrapper {
+      -webkit-transform: translateY(-200%);
+      transform: translateY(-200%); 
+  }
+
+  #button_C:checked ~ #carousel .p-wrapper {
+      -webkit-transform: translateY(-300%);
+      transform: translateY(-300%); 
+  }
+
+  #vidX {
+      border: none;
+      border-radius: 10px;
+      margin-left: 40px;
+  }
+
+  #Passimg {
+    height: 200px;
+    transform: translate(500px, -100px);
+    border-radius: 50px;
+  }
+              
+  [class^="panel_"] {
+      overflow: auto;
+      position: relative;
+      width: inherit;
+      height: inherit;
+      padding: 13px;
+  }
+              
+  #navigation {
+      margin-left: 24px;
+  }
+
+  [class^="label_"] {
+      display: block;
+      cursor: pointer;
+      margin: 8px 0;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      border-radius: 4px;
+      color: #aaa;
+      background-color: #005892;
+      transition: all 0.3s ease;
+  }
+              
+  [class^="label_"]:hover {
+      color: #444;
+      background-color: #f54242;
+  }
+              
+  #button_I:checked ~ #navigation .label_I,
+  #button_M:checked ~ #navigation .label_M,
+  #button_E:checked ~ #navigation .label_E,
+  #button_C:checked ~ #navigation .label_C {
+      cursor: default;
+      color: #fff;
+      background-color: #4781ff;
+      box-shadow: 3px 3px 10px white;
+  }
+  
+  .Profilez {
+    color: rgb(255, 255, 255);
+    border: none;
+    border-top-left-radius: 30px ;
+    border-top-right-radius: 30px ;
+    box-shadow: -3px -3px 10px rgb(12, 49, 92) ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(Picsusedd/cybercity.jpg);
+    background-size: 100% 100%, contain;
+    background-repeat: no-repeat;
+  }
+
+  .Profilez {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+
+  #boutus {
+    font-size: 40px;
+    text-align: center;
+    margin-right: 100px;
+    text-shadow: 2px 2px 10px rgb(74, 119, 243), -2px -2px 10px rgb(243, 74, 74);
+  }
+
+  #Cards, #ProfNavigation {
+    flex: initial;
+    display: block;
+
+  }
+
+  #Cards {
+    overflow: hidden;
+    width: 400px;
+    height: 500px;
+    border-radius: 4px;
+    backdrop-filter: blur(65px);
+    box-shadow: 3px 3px 10px #0d44aa, -3px -3px 10px #0d44aa ;
+    border: none;
+    border-radius: 10px;
+
+  }
+
+.C-wrapper {
+  position: relative;
+  width: auto;
+  height: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.C-wrapper .card_1 #Namez, 
+.C-wrapper .card_2 #Namez, 
+.C-wrapper .card_3 #Namez, 
+.C-wrapper .card_4 #Namez, 
+.C-wrapper .card_5 #Namez {
+  text-align: center;
+  font-size: 25px;
+  text-shadow: 2px 2px 10px rgb(74, 119, 243), -2px -2px 10px rgb(243, 74, 74);
+}
+
+.C-wrapper .card_1 #Quotez,
+.C-wrapper .card_2 #Quotez,
+.C-wrapper .card_3 #Quotez,
+.C-wrapper .card_4 #Quotez,
+.C-wrapper .card_5 #Quotez {
+  text-align: center;
+  font-size: 20px;
+}
+
+#Profbutton_1:checked ~ #Cards .C-wrapper {
+  -webkit-transform: translateY(0);
+  transform: translateY(0); 
+}
+          
+#Profbutton_2:checked ~ #Cards .C-wrapper {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%); 
+}
+
+#Profbutton_3:checked ~ #Cards .C-wrapper {
+  -webkit-transform: translateY(-200%);
+  transform: translateY(-200%); 
+}
+
+#Profbutton_4:checked ~ #Cards .C-wrapper {
+  -webkit-transform: translateY(-300%);
+  transform: translateY(-300%); 
+}
+
+#Profbutton_5:checked ~ #Cards .C-wrapper {
+  -webkit-transform: translateY(-400%);
+  transform: translateY(-400%); 
+}
+
+[class^="card_"] {
+  overflow: auto;
+  position: relative;
+  width: inherit;
+  height: inherit;
+  padding: 13px;
+}
+
+[class^="laybel_"] {
+  display: block;
+  cursor: pointer;
+  margin: 8px 0;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 100px;
+  color: #aaa;
+  background-color: #005892;
+  transition: all 0.3s ease;
+}
+          
+[class^="laybel_"]:hover {
+  color: #444;
+  background-color: #f54242;
+}
+
+#Profbutton_1:checked ~ #ProfNavigation .laybel_1,
+#Profbutton_2:checked ~ #ProfNavigation .laybel_2,
+#Profbutton_3:checked ~ #ProfNavigation .laybel_3,
+#Profbutton_4:checked ~ #ProfNavigation .laybel_4,
+#Profbutton_5:checked ~ #ProfNavigation .laybel_5 { 
+
+    cursor: default;
+    color: #fff;
+    background-color: #4781ff;
+    box-shadow: 3px 3px 10px rgb(223, 100, 100);
+}
+
+#Profimg {
+  height: 100px;
+  border-radius: 100px;
+  border: rgb(255, 255, 255) solid 1px;
+  padding: 5px;
+  transform: translateX(130px);
+}
+
+#Fblogo1 {
+  height: 50px;
+  transform: translate(160px, 150px);
+  border-radius: 100px;
+  box-shadow: 2px 2px 10px rgb(117, 204, 255), -2px -2px 10px rgb(236, 127, 127) ;
+}
+
+#Fblogo2 {
+  height: 50px;
+  transform: translate(120px, 50px);
+  border-radius: 100px;
+  box-shadow: 2px 2px 10px rgb(117, 204, 255), -2px -2px 10px rgb(236, 127, 127) ;
+}
+
+#Fblogo3 {
+  height: 50px;
+  transform: translate(110px, 100px);
+  border-radius: 100px;
+  box-shadow: 2px 2px 10px rgb(117, 204, 255), -2px -2px 10px rgb(236, 127, 127) ;
+}
+
+#Fblogo4 {
+  height: 50px;
+  transform: translate(160px, 100px);
+  border-radius: 100px;
+  box-shadow: 2px 2px 10px rgb(117, 204, 255), -2px -2px 10px rgb(236, 127, 127) ;
+}
+
+#Fblogo5 {
+  height: 50px;
+  transform: translate(120px, 80px);
+  border-radius: 100px;
+  box-shadow: 2px 2px 10px rgb(117, 204, 255), -2px -2px 10px rgb(236, 127, 127) ;
+}
+
+#Ig1 {
+  height: 50px;
+  transform: translate(140px, 50px);
+  border-radius: 100px;
+  box-shadow: 2px 2px 10px rgb(117, 204, 255), -2px -2px 10px rgb(236, 127, 127) ;
+}
+
+#Ig2 {
+  height: 50px;
+  transform: translate(130px, 100px);
+  border-radius: 100px;
+  box-shadow: 2px 2px 10px rgb(117, 204, 255), -2px -2px 10px rgb(236, 127, 127) ;
+}
+
+#Yt1 {
+  height: 40px;
+  transform: translate(140px, 95px);
+  border-radius: 100px;
+  box-shadow: 2px 2px 10px rgb(117, 204, 255), -2px -2px 10px rgb(236, 127, 127) ;
+}
+
+#Yt2 {
+  height: 40px;
+  transform: translate(135px, 77px);
+  border-radius: 100px;
+  box-shadow: 2px 2px 10px rgb(117, 204, 255), -2px -2px 10px rgb(236, 127, 127) ;
+}
+
+#ProfNavigation {
+  margin-left: 24px;
+}
+
+.footer {
+  border: solid;
+  border-color: #004642;
+  background-color: #166b67;
+  color: white;
+  font-size: 19px;
+
+}
+
+  
