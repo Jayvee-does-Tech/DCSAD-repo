@@ -40,3 +40,12 @@ Best regards,
 Barurot!</3
 
 Feel free to customize this message to suit your class's specific needs and add any additional information that may be relevant. Happy coding and learning together on GitHub!
+
+~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
+
+Also, to stay updated with the latest course materials, announcements, and valuable coding resources, don't forget to follow our fantastic teacher's GitHub account! By doing so, you'll have easy access to all the insights and materials that can help you excel in our class.
+
+Follow our teacher's GitHub account (https://github.com/ninonarido)
+today and let's embark on this learning journey together!
+
+Happy coding everyone!
